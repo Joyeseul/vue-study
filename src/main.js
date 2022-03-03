@@ -1,18 +1,15 @@
-//import Vue from 'vue'
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
 
-// Default App Define
-import App from './App'
-import router from './router/index'
+// import { createApp } from 'vue'
+//
+// const app = createApp(App);
+// app.use(router);
+// app.mount('#app');
 
-
-// new Vue({
-//   el: '#app',
-//   router,
-//   render: h => h(App)
-// })
-
-import crateApp from 'vue'
-
-const myApp = createApp(App);
-myApp.use(router);
-myApp.mount('#app');
+new Vue({
+  //el: '#app',
+  router,
+  render: h => h(App)
+}).$mount('#app')
